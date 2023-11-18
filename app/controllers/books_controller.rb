@@ -7,7 +7,7 @@ class BooksController < ApplicationController
       flash[:notice] ="Book was successfully created"
       redirect_to book_path(@book.id)
     else
-      flash[:alert] ="Book failed to create"
+      flash[:alert] ="Book was error created "
       render :index
     end
  end
